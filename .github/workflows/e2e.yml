@@ -53,7 +53,7 @@ jobs:
 
       - name: Run Tests
         continue-on-error: true
-        run: mvn test -DbrowserType="chrome" -DheadlessExecution="true" -Dtest="apis.restfulbooke.tests.RestfulBookerApis"
+        run: mvn test -DbrowserType="chrome" -DheadlessExecution="true" -Dtest="apis.restfulbooker.tests.RestfulBookerApis"
       - name: Publish Report 
         # continue-on-error: true
         uses: dorny/test-reporter@v1
