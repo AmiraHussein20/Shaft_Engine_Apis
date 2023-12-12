@@ -1,0 +1,21 @@
+{
+  "testDataExpectedSignUpText": "New User Signup!",
+  "testDataName": "Amira",
+  "testDataMail": "amira.hisham",
+
+  "testDataPass": "pass123",
+  "testDataDay": "1",
+  "testDataMonth": "2",
+  "testDataYear": "2001",
+  "testDataFirstName": "Amira",
+  "testDataLastName": "Hisham",
+  "testDataCompany": "GizaSystems",
+  "testDataAddress1": "Rehab City",
+  "testDataAddress2": "Fifth Statement",
+  "testDatacountry": "India",
+  "testDataState": "canada",
+  "testDataCity": "Delta",
+  "testDataZipCode": "11841",
+  "testDataMobile": "01157545640",
+  "testDataCreateAccountText": "ACCOUNT CREATED!"
+}
