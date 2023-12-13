@@ -31,6 +31,15 @@ jobs:
         continue-on-error: true
         run: mvn test -DbrowserType="chrome" -DheadlessExecution="true"   -Dtest="apis.restfulbooker.tests.RestfulBookerApis"
         #run: mvn test -DbrowserType="chrome" -DheadlessExecution="true"  -Dtest="${{ github.event.inputs.testsPath }}"
+      - name: Publish Report 
+        # continue-on-error: true
+        uses: dorny/test-reporter@v1
+        if: success() || failure()
+        with:
+          name: Tests Report ChromeLinux
+          path: 'target/surefire-reports/TEST-*.xml'
+          reporter: java-junit
+
 
   FirefoxWindowsTest:
     runs-on: windows-latest
